@@ -473,7 +473,7 @@ if __name__ == '__main__':
     if args.outf.endswith(".csv"):
         if args.verbose:
             print("Dumping csv output to "+ args.outf)
-        Firelist.to_csv(args.outf, index=False)
+        Firelist.sort_values(by=["FireStartZ"]).to_csv(args.outf, index=False)
     elif args.outf.endswith(".nc") or  args.outf.endswith(".nc4"):
         if args.verbose:
             print("Dumping nc output to "+ args.outf)
