@@ -43,6 +43,7 @@ subroutine cluster(x,y,z, s, frp, ipixel, icluster, idup, dupdist, N)
                       dupdist(i) = sqrt(dist2)
                     endif
              endif
+             continue !! Fixme Disable clustering
              if (icluster(j) < 0) then !: ## Not yet assigned, just merge
                icluster(j) = icluster(i)
              else  !!! Reassign previous cluster

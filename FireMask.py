@@ -3,7 +3,6 @@
 
 import netCDF4 as nc4
 import numpy as np
-import png
 import os
 
 class FireMask:
@@ -101,6 +100,8 @@ class FireMask:
              mask[0,:,:] = self.mask[:]
 
          def to_KML(self,basename, pngrefname = None):
+
+            import png
 
             kmlname = "%s.kml"%(basename)
             pngname = "%s.png"%(basename)

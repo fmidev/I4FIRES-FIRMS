@@ -29,7 +29,7 @@ import Firelist2nc
 
 pd.set_option('display.max_columns', None)
 pd.set_option('display.expand_frame_repr', False)
-pd.set_option('max_colwidth', None)
+pd.set_option('max_colwidth', -1)
 
 sats="A T 1 N".split() ##N= Suomi National Polar-orbiting Partnership (Suomi NPP), 1=NOAA-20 (designated JPSS-1 prior to launch)
                        ## Aqua Terra
